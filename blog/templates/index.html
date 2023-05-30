@@ -5,7 +5,10 @@
 
 {% for post in posts %}
     <div>
-        <h3><a href="/post/{{ post.slug}}">{{ post.title}}</a></h3>
+        <div class="card-header" style="background:url({{ post.image.url}})">
+            <h3><a href="/post/{{ post.slug}}">{{ post.title}}</a></h3>
+        </div>
+
         <p> {{post.summary}}</p>
 
     </div>
